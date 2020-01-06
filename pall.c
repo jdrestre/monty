@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * pall - prints all the values on the stack, starting from the top of the stack
+ * pall - prints all the values on the stack, starting from the top stack
  * @stack: pointer to top of stack
  * @line_number: void argument
  */
