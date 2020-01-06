@@ -2,17 +2,17 @@
 stack_t *stack = NULL;
 
 /**
- * main - interpreter Monty ByteCodes files
+ * main - interpreter for Monty ByteCodes files
  * @argc: number of command line arguments
- * @argv: vector arguments
+ * @argv: argument vector
  *
- * Return: EXIT_SUCCESS for success, else EXIT_FAIL
+ * Return: EXIT_SUCCESS upon success, else, EXIT_FAILURE
  */
 int main(int argc, char *argv[])
 {
 	int fd, i;
 	unsigned int line_number;
-	FILE *fpointer:
+	FILE *fpointer;
 	size_t bufsize = 0;
 	char *buf = NULL;
 
@@ -20,12 +20,14 @@ int main(int argc, char *argv[])
 	fd = open(argv[1], O_RDONLY);
 	file_open_status(fd, argv);
 
+	/* gets file pointer from a file descriptor */
 	fpointer = fdopen(fd, "r");
 	if (fpointer == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
+	/* read file line by line, call appropriate opcode */
 	line_number = 1;
 	while (getline(&buf, &bufsize, fpointer) != EOF)
 	{
