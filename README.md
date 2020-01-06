@@ -21,5 +21,9 @@ At the end of this project I could explain to anyone:
 
 ## Task Project
 ---
-File Name|Task Name|Task Description
----|---|---
+File Name|What does the file do?
+---|---
+monty.h|header file
+push.c|Usage: push <int> - Pushes an element to the stack
+pall.c|prints all the values on the stack, starting from the top of the stack.
+isnumber.c|checks argv[2] is a number
