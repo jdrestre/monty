@@ -31,3 +31,4 @@ main.c|main function
 error_handling.c|file to handle errors
 get_instruc_func.c|add multiple instruccitions for the interpreter
 clear_stack.c|stack cleaning
+pop.c|add first a simple pop - function that removes the top element of the stack
