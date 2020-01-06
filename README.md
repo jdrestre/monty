@@ -27,3 +27,5 @@ monty.h|header file
 push.c|Usage: push <int> - Pushes an element to the stack
 pall.c|prints all the values on the stack, starting from the top of the stack.
 isnumber.c|checks argv[2] is a number
+main.c|main function
+error_handling.c|file to handle errors
