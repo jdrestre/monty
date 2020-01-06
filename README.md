@@ -33,3 +33,4 @@ get_instruc_func.c|add multiple instruccitions for the interpreter
 clear_stack.c|stack cleaning
 pop.c|function that removes the top element of the stack
 pint.c|function that prints the value at the top of the stack, followed by a new line
+swap.c|function the opcode swaps the top two elements of stack
