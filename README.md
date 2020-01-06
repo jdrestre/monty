@@ -29,3 +29,5 @@ pall.c|prints all the values on the stack, starting from the top of the stack.
 isnumber.c|checks argv[2] is a number
 main.c|main function
 error_handling.c|file to handle errors
+get_instruc_func.c|add multiple instruccitions for the interpreter
+clear_stack.c|stack cleaning
